@@ -10,7 +10,7 @@
 /recovery	emmc		/dev/block/bootdevice/by-name/recovery			flags=backup=1;flashimg;display="Recovery"
 /cache		ext4		/dev/block/bootdevice/by-name/cache			flags=backup=1;display="Cache"
 /persist	ext4		/dev/block/bootdevice/by-name/persist			flags=fsflags=ro;display="Persist"
-/efs		ext4		/dev/block/bootdevice/by-name/efs			flags=backup=1;display="EFS"
+/efs		ext4		/dev/block/bootdevice/by-name/sec_efs			flags=backup=1;display="EFS"
 /sec_efs	ext4		/dev/block/bootdevice/by-name/sec_efs			flags=backup=1;display="SEC EFS"
 /firmware	emmc		/dev/block/bootdevice/by-name/apnhlos			flags=backup=1;display="Firmware"
 /modem		emmc		/dev/block/bootdevice/by-name/modem			flags=backup=1;display="Modem"
@@ -24,4 +24,4 @@
 
 # Removable storage
 /external_sd	vfat		/dev/block/mmcblk0p1	/dev/block/mmcblk0		flags=storage;wipeingui;removable
-/usb-otg	vfat		/dev/block/sdf1	/dev/block/sdf				flags=display="USB-OTG";storage;wipeingui;removable
+/usb-otg	vfat		/dev/block/sde1	/dev/block/sde				flags=display="USB-OTG";storage;wipeingui;removable
